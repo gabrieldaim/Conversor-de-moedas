@@ -24,15 +24,15 @@
             <h2>Conversor de moedas</h2>
             <div class="wrapper">
                 <div class="money-wrapper">
-
-                    <input type="text" class="amount" value="$1.000">
+                    <span>$</span>
+                    <input type="number" class="amount valor1" value="1.000">
                     <div class="dropdown">
                         <div class="selected">
                             <span class="fi fi-us fis"></span>
                             USD
                         </div>
 
-                        <ul>
+                        <ul class="ul1">
                             <li><span class="fi fi-br fis"></span>BRL</li>
                             <li><span class="fi fi-us fis"></span>USD</li>
                             <li><span class="fi fi-eu fis"></span>EUR</li>
@@ -45,15 +45,15 @@
                     <img src="./assets/Vector-setas.svg" alt="">
                 </div>
                 <div class="money-wrapper">
-
-                    <input type="text" class="amount" value="$5.148">
+                    <span>$</span>
+                    <input type="number" class="amount valor2" value="5.148">
                     <div class="dropdown">
                         <div class="selected">
                             <span class="fi fi-br fis"></span>
                             BRL
                         </div>
 
-                        <ul>
+                        <ul class="ul2">
                             <li><span class="fi fi-br fis"></span>BRL</li>
                             <li><span class="fi fi-us fis"></span>USD</li>
                             <li><span class="fi fi-eu fis"></span>EUR</li>
@@ -69,16 +69,19 @@
             <div class="wrapper">
                 <div id="chart"></div>
                 <div class="chart-controls">
-                    <div>1D</div>
-                    <div>1D</div>
-                    <div>1D</div>
-                    <div>1D</div>
-                    <div>1D</div>
+                    <div>8D</div>
+                    <div>7D</div>
+                    <div>6D</div>
+                    <div>5D</div>
+                    <div>4D</div>
+                    <div>3D</div>
+                    <div>2D</div>
                     <div>1D</div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./moment.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="./index.js"></script>
 </body>

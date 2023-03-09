@@ -30,6 +30,7 @@ main {
     border-radius: 1.6rem;
     display: grid;
     gap: 6.4rem;
+    min-height: 59.2rem;
 }
 
 section h2 {
@@ -61,13 +62,20 @@ section h2 {
     outline: .25rem solid #7C3AED;
 }
 
+.money-wrapper span{
+    margin-top: -.3rem;
+}
+
 .amount{
     border: none;
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: var(--text-color);
     width: 50%;
+    padding-right: 0.5rem;
 }
+
+
 
 .amount:focus{
     outline: 0;
@@ -157,8 +165,8 @@ li{
 }
 
 .cambio .wrapper {
-    margin-top: 2.4rem;
-
+    margin-top: 2.4rem; 
+    width: 100%;
 }
 
 .tooltip{
@@ -171,7 +179,7 @@ li{
 .chart-controls{
     display: flex;
     justify-content: space-between;
-    margin: -2.2rem .8rem 0 4.8rem;
+    margin: -2.2rem -1rem 0 2.8rem;
 }
 
 .chart-controls div{
@@ -203,5 +211,9 @@ li{
 
     .money-wrapper{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: .6rem;
     }
 }
